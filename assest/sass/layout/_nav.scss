@@ -1,0 +1,76 @@
+nav {
+  position: fixed;
+  width: 100%;
+}
+.container {
+  position: absolute;
+  width: 100%;
+  background-color: black;
+  color: #ee0979;
+  opacity: 0.8;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 100px 30px 100px;
+  .container-right {
+    ul {
+      display: flex;
+      gap: 10px;
+      align-items: baseline;
+      li {
+        &:hover {
+          color: white;
+        }
+      }
+    }
+  }
+  .container-left {
+    p {
+      color: white !important;
+    }
+  }
+  .hamburger {
+    display: none;
+    padding: 10px;
+    text-align: end;
+    font-size: 30px;
+    opacity: 0.5;
+    border: 1px solid;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+}
+.backimg {
+  background-image: url("../img/Virtual_Background-Afternoon.jpg");
+  width: 100%;
+  height: 680px;
+  color: white;
+  font-size: 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Segoe UI";
+  text-align: center;
+  button {
+    padding: 20px 40px 20px 40px;
+    margin-top: 40px;
+    border-radius: 30px;
+    border: none;
+    background-color: #ee0979;
+    color: white;
+    font-size: 20px;
+    &:hover {
+      background-color: #be0761;
+    }
+  }
+}
+@media screen and (max-width: 1024px){
+  .container .hamburger{
+    display: block;
+  }
+  .container .container-right ul{
+    display: none;
+  }
+  
+}

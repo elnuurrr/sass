@@ -1,0 +1,38 @@
+.main {
+  .main-into {
+    display: flex;
+    align-items: center;
+    padding: 3rem;
+    gap: 50px;
+    font-family: "Segoe UI";
+    img {
+      border-radius: 50%;
+      padding-left: 50px;
+      max-width: 450px;
+      width: 100%;
+      max-height: 450px;
+      height: 100%;
+    }
+    .text {
+      width: 40%;
+      font-size: 15px;
+      text-align: start;
+      h2 {
+        font-size: 3.5rem;
+        font-weight: 300;
+      }
+    }
+  }
+  .main1 {
+    flex-direction: row-reverse;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .main .main-into {
+    text-align: center;
+    flex-direction: column;
+  }
+  .main .main-into .text{
+    text-align: center;
+  }
+}
